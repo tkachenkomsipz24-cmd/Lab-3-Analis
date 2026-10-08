@@ -31,4 +31,4 @@ class Program
             Console.WriteLine(buffer[index]);
         }
     }
-}
+} 
