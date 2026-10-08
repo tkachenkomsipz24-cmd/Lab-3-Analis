@@ -11,3 +11,9 @@
 1. **Задача 1 (Журнал у зворотному порядку):**
    ```bash
    dotnet script lab03/Task1.cs
+2. **Задача 2 (Підсумки за місяцями):**
+   ```bash
+   dotnet run --project lab03/Task2
+3. **Задача 3 (Останні N подій):**
+   ```bash
+   dotnet run --project lab03/Task3
