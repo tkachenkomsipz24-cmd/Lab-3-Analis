@@ -28,4 +28,4 @@ class Program
             Console.WriteLine($"Місяць {m + 1}: {monthlyTotals[m]} грн");
         }
     }
-} 
+}
