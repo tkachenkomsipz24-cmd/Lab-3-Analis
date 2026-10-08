@@ -4,7 +4,7 @@ using System.Collections.Generic;
 class Program
 {
     static void Main()
-    {
+    { 
         List<string> log = new List<string>();
 
         log.Add("Запис 1: Запуск системи");
