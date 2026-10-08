@@ -1,31 +1,21 @@
 using System;
-
-record Transaction(int Month, decimal Amount);
+using System.Collections.Generic;
 
 class Program
 {
     static void Main()
     {
-        Transaction[] transactions = new Transaction[]
-        {
-            new Transaction(1, 1500m),
-            new Transaction(3, 2000m),
-            new Transaction(1, 500m),
-            new Transaction(12, 3500m),
-            new Transaction(3, 800m)
-        };
+        List<string> log = new List<string>();
 
-        decimal[] monthlyTotals = new decimal[12];
+        log.Add("Запис 1: Запуск системи");
+        log.Add("Запис 2: Помилка з'єднання з сервером");
+        log.Add("Запис 3: Користувач увійшов у систему");
+        log.Add("Запис 4: Оновлення конфігурації");
 
-        foreach (var t in transactions)
+        Console.WriteLine("=== Журнал у зворотному порядку ===");
+        for (int i = log.Count - 1; i >= 0; i--)
         {
-            monthlyTotals[t.Month - 1] += t.Amount;
-        }
-
-        Console.WriteLine("=== Підсумки продажів за місяцями ===");
-        for (int m = 0; m < monthlyTotals.Length; m++)
-        {
-            Console.WriteLine($"Місяць {m + 1}: {monthlyTotals[m]} грн");
+            Console.WriteLine(log[i]);
         }
     }
 }
