@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    static void Main()
+    static void Main() 
     { 
         List<string> log = new List<string>();
 
